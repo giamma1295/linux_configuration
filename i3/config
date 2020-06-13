@@ -412,5 +412,6 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
+
 #Keyboard Layout Configuration
 exec_always "setxkbmap -model pc105 -layout it -variant ,, -option terminate:ctrl_alt_bksp"
