@@ -6,8 +6,24 @@ CONFIG="$HOME/.config/wofi/config"
 STYLE="$HOME/.config/wofi/style.css"
 COLORS="$HOME/.config/wofi/colors"
 
+launch_clipboard_hist() {
+    cliphist list | wofi --dmenu --conf ${CONFIG} --style ${STYLE} --color ${COLORS} | cliphist decode | wl-copy
+}
+
+launch_app_menu() {
+    wofi --show drun --prompt 'Search...' --conf ${CONFIG} --style ${STYLE} --color ${COLORS}
+}
+
+launch() {
+    if [[ "$1" == "--clip" ]]; then
+        launch_clipboard_hist
+    else
+        launch_app_menu
+    fi
+}
+
 if [[ ! `pidof wofi` ]]; then
-	wofi --show drun --prompt 'Search...' --conf ${CONFIG} --style ${STYLE} --color ${COLORS}
+    launch "$1"
 else
-	pkill wofi
+    pkill wofi
 fi

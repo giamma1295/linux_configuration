@@ -1,8 +1,9 @@
 
 ## Preparation
 
-1. Install ArchLinux
-2. install the following packages
+1. Install ArchLinux, base install, pipewire, wireplumber, wayland, 
+2. Install appropriate gpu/libva/vulkan driver for you GPU, hw accelleration needed in order to run hyprland
+3. install the following packages
 
 **Official Repo (w/ Pacman)**
 - hyprland
@@ -21,6 +22,9 @@
 - ttf-hack
 - kvantum
 - breeze-icons
+- yad
+- mako
+- cliphist
 
 **AUR**
 - wlogout
