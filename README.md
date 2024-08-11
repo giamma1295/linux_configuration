@@ -1,4 +1,6 @@
 
+# ArchLinux /w Hyprland Basic Config
+
 ## Preparation
 
 1. Install **ArchLinux**, base install, pipewire, wireplumber, wayland, 
