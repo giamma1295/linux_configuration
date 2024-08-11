@@ -27,6 +27,9 @@
 - yad
 - mako
 - cliphist
+- hyprpaper
+- network-manager-applet
+- blueman
 
 **AUR**
 - wlogout
@@ -37,7 +40,11 @@
 
 1. Configure **hyprland** by copying the folder ``hypr`` under ``~/.config/hypr``
 2. Configure **waybar** by copying the folder ``waybar`` under ``~/.config/waybar``
+3. Configure **mako** by copying the folder ``mako`` under ``~/.config/mako``
 
 
+## Wallpaper
+
+This configuration will look for ``~/.config/hypr/wallpaper/bg.jpg`` file, you can edit this behaviour in ``~/.config/hypr/hyprpaper.conf``
 
 
