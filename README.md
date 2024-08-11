@@ -1,8 +1,8 @@
 
 ## Preparation
 
-1. Install ArchLinux, base install, pipewire, wireplumber, wayland, 
-2. Install appropriate gpu/libva/vulkan driver for you GPU, hw accelleration needed in order to run hyprland
+1. Install **ArchLinux**, base install, pipewire, wireplumber, wayland, 
+2. Install appropriate gpu/libva/vulkan **driver for you GPU**, hw accelleration needed in order to run hyprland
 3. install the following packages
 
 **Official Repo (w/ Pacman)**
@@ -33,8 +33,8 @@
 
 ## Dot Files Installation
 
-1. Configure **hyprland** by copying the folder hypr under ~/.config/hypr
-2. Configure **waybar** by copying the folder waybar under ~/.config/waybar
+1. Configure **hyprland** by copying the folder ``hypr`` under ``~/.config/hypr``
+2. Configure **waybar** by copying the folder ``waybar`` under ``~/.config/waybar``
 
 
 
