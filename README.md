@@ -1,7 +1,8 @@
 
-## Installation
+## Preparation
 
-Install the following packages
+1. Install ArchLinux
+2. install the following packages
 
 **Official Repo (w/ Pacman)**
 - hyprland
@@ -26,8 +27,10 @@ Install the following packages
 - numix-gtk-theme-git 
 
 
-Copy the folder hypr under ~/.config/hypr
-Copy the folder waybar under ~/.config/waybar
+## Dot Files Installation
+
+1. Configure **hyprland** by copying the folder hypr under ~/.config/hypr
+2. Configure **waybar** by copying the folder waybar under ~/.config/waybar
 
 
 
