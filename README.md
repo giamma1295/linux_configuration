@@ -30,10 +30,15 @@
 - hyprpaper
 - network-manager-applet
 - blueman
+- thunar
+- alacritty
+- polkit-kde-agent
+- sddm
+- otf-font-awesome
 
 **AUR**
 - wlogout
-- numix-gtk-theme-git 
+- arc-gtk-theme
 
 
 ## Dot Files Installation

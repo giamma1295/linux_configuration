@@ -1,184 +1,104 @@
-/** ********** Fonts ********** **/
+@define-color base00 #181818;
+@define-color base01 #2f343f;
+@define-color base02 #3b3e47;
+@define-color base03 #585858;
+@define-color base04 #b8b8b8;
+@define-color base05 #d8d8d8;
+@define-color base06 #e8e8e8;
+@define-color base07 #f8f8f8;
+@define-color base08 #ab4642;
+@define-color base09 #dc9656;
+@define-color base0A #f7ca88;
+@define-color base0B #a1b56c;
+@define-color base0C #86c1b9;
+@define-color base0D #7cafc2;
+@define-color base0E #ba8baf;
+@define-color base0F #a16946;
+
 * {
-    font-family: "JetBrains Mono", "Iosevka Nerd Font", archcraft, sans-serif;
-    font-size: 12px;
+	transition: none;
+	box-shadow: none;
 }
 
-/** ********** Waybar Window ********** **/
-window#waybar {
-    background-color: #1e1e2e;
-	color: #1e1e2e;
-    border-bottom: 2px solid #313244;
-    transition-property: background-color;
-    transition-duration: .5s;
+#waybar {
+font-family: "JetBrains Mono", "Iosevka Nerd Font", archcraft, sans-serif;
+font-size: 1.2em;
+font-weight: 400;
+color: @base04;
+background: @base01;
 }
 
-window#waybar.hidden {
-    opacity: 0.5;
+#workspaces {
+margin: 0 4px;
 }
 
-/** ********** Backlight ********** **/
-#backlight {
-	background-color: #cba6f7;
+#workspaces button {
+margin: 4px 0;
+padding: 4px;
+color: @base05;
 }
 
-/** ********** Battery ********** **/
-#battery {
-	background-color: #f9e2af;
+#workspaces button.visible {
 }
 
-#battery.charging {
+#workspaces button.active {
+border-radius: 4px;
+background-color: @base02;
 }
 
-#battery.plugged {
+#workspaces button.urgent {
+color: rgba(238, 46, 36, 1);
 }
 
-@keyframes blink {
-    to {
-        color: #000000;
-    }
-}
-
-#battery.critical:not(.charging) {
-	background-color: #f38ba8;
-    color: #f38ba8;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-/** ********** Clock ********** **/
-#clock {
-	background-color: #a6e3a1;
-}
-
-/** ********** CPU ********** **/
-#cpu {
-	background-color: #89dceb;
-}
-
-/** ********** Memory ********** **/
-#memory {
-	background-color: #eba0ac;
-}
-
-/** ********** Disk ********** **/
-#disk {
-	background-color: #b4befe;
-}
-
-/** ********** Tray ********** **/
 #tray {
-	background-color: #cdd6f4;
-}
-#tray > .passive {
-    -gtk-icon-effect: dim;
-}
-#tray > .needs-attention {
-    -gtk-icon-effect: highlight;
-}
-#tray > .active {
+margin: 4px 4px 4px 4px;
+border-radius: 4px;
+background-color: @base02;
 }
 
-/** ********** MPD ********** **/
-#mpd {
-	background-color: #94e2d5;
+#tray * {
+padding: 0 4px;
+border-left: 0px solid @base00;
 }
 
-#mpd.disconnected {
-	background-color: #f38ba8;
+#tray *:first-child {
+border-left: none;
 }
 
-#mpd.stopped {
-	background-color: #f5c2e7;
+#mode, #battery, #cpu, #memory, #network, #pulseaudio, #idle_inhibitor, #backlight,#custom-power,  #custom-storage, #custom-updates, #custom-weather, #custom-mail, #clock, #temperature, #language{
+margin: 4px 0;
+padding: 0 4px;
+background-color: @base02;
+border-radius: 4px;
+min-width: 20px;
 }
 
-#mpd.playing {
-	background-color: #74c7ec;
-}
-
-#mpd.paused {
-}
-
-/** ********** Pulseaudio ********** **/
-#pulseaudio {
-	background-color: #fab387;
+#pulseaudio.muted {
+color: @base0F;
 }
 
 #pulseaudio.bluetooth {
-	background-color: #f5c2e7;
-}
-#pulseaudio.muted {
-	background-color: #313244;
-	color: #cdd6f4;
+color: @base0C;
 }
 
-/** ********** Network ********** **/
-#network {
-	background-color: #89b4fa;
+#clock {
+margin-left: 0px;
+margin-right: 4px;
+background-color: transparent;
 }
 
-#network.disconnected,#network.disabled {
-	background-color: #313244;
-	color: #cdd6f4;
-}
-#network.linked {
-}
-#network.ethernet {
-}
-#network.wifi {
+#temperature.critical {
+color: @base0F;
 }
 
-/** ********** Custom ********** **/
-#custom-menu, #custom-power, #custom-weather, #custom-updater {
-	border-radius: 4px;
-	margin: 6px 0px;
-	padding: 2px 8px;
+#window {
+font-size: 0.9em;
+font-weight: 400;
+font-family: sans-serif;
 }
 
-#custom-menu {
-	background-color: #f5c2e7;
-	margin-left: 6px;
-	padding: 2px 6px;
-	font-size: 16px;
-}
-
-#custom-power {
-	background-color: #f38ba8;
-	margin-right: 6px;
-	padding: 2px 8px;
-	font-size: 16px;
-}
-
-#custom-updater {
-	background-color: #e6ed7b;
-	margin-right: 6px;
-	padding: 2px 8px;
-	font-size: 12px;
-}
-
-#custom-weather {
-	background-color: #cba6f7;
-	margin-right: 6px;
-	padding: 2px 8px;
-	font-size: 12px;
-}
-
-/** Common style **/
-#backlight, 
-#battery,
-#clock,
-#cpu,
-#disk,
-#mode,
-#memory,
-#mpd,
-#tray,
-#pulseaudio,
-#network {
-	border-radius: 4px;
-	margin: 6px 0px;
-	padding: 2px 8px;
+#language {
+font-size: 0.9em;
+font-weight: 500;
+letter-spacing: -1px;
 }
