@@ -53,3 +53,6 @@
 This configuration will look for ``~/.config/hypr/wallpaper/bg.jpg`` file, you can edit this behaviour in ``~/.config/hypr/hyprpaper.conf``
 
 
+## Missing feature
+1. sleep
+2. better power menu
