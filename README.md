@@ -35,6 +35,9 @@
 - polkit-kde-agent
 - sddm
 - otf-font-awesome
+- gvfs
+- hypridle
+- hyperlock
 
 **AUR**
 - wlogout
