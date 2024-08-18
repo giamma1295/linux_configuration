@@ -68,6 +68,7 @@
 3. Configure **mako** by copying the folder ``dotfiles/mako`` under ``~/.config/mako``
 4. Configure **gtk** by copying the ``dotfiles/gtk*`` files and folders under ``~/.config``
 5. Configure **qt** by copying the ``dotfiles/qt6ct`` folder under ``~/.config/qt6ct``
+6. Configure **qt** by copying the ``dotfiles/alacritty`` folder under ``~/.config/alacritty``
 
 ## Wallpaper
 
