@@ -2,7 +2,7 @@
 # ArchLinux /w Hyprland Su**less Config
 
 
-![Logo](./example.png)
+![Logo](./images/example.png)
 
 ## Preparation
 
@@ -50,10 +50,11 @@
 
 ## Dot Files Installation
 
-1. Configure **hyprland** by copying the folder ``hypr`` under ``~/.config/hypr``
-2. Configure **waybar** by copying the folder ``waybar`` under ``~/.config/waybar``
-3. Configure **mako** by copying the folder ``mako`` under ``~/.config/mako``
-4. Configure **gtk** by copying the ``gtk*`` files and folders under ``~/.config``
+1. Configure **hyprland** by copying the folder ``dotfiles/hypr`` under ``~/.config/hypr``
+2. Configure **waybar** by copying the folder ``dotfiles/waybar`` under ``~/.config/waybar``
+3. Configure **mako** by copying the folder ``dotfiles/mako`` under ``~/.config/mako``
+4. Configure **gtk** by copying the ``dotfiles/gtk*`` files and folders under ``~/.config``
+5. Configure **qt** by copying the ``dotfiles/qt6ct`` folder under ``~/.config/qt6ct``
 
 ## Wallpaper
 
