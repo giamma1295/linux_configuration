@@ -1,5 +1,8 @@
 
-# ArchLinux /w Hyprland Basic Config
+# ArchLinux /w Hyprland Su**less Config
+
+
+![Logo](./example.png)
 
 ## Preparation
 
@@ -42,6 +45,7 @@
 **AUR**
 - wlogout
 - arc-gtk-theme
+- hyprshot
 
 
 ## Dot Files Installation
@@ -58,4 +62,5 @@ This configuration will look for ``~/.config/hypr/wallpaper/bg.jpg`` file, you c
 
 ## Missing feature
 1. clean the gtk mess
-2. sleep
+2. configure font
+3. configure sleep and lock
