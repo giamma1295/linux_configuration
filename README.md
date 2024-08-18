@@ -2,7 +2,7 @@
 # ArchLinux /w Hyprland Su**less Config
 
 
-![Logo](./images/example.png)
+![Logo](./images/main.png)
 
 ## Preparation
 
@@ -11,41 +11,54 @@
 3. install the following packages
 
 **Official Repo (w/ Pacman)**
-- hyprland
-- waybar
-- pamixer
-- playerctl
-- pavucontrol
-- brightnessctl
-- ttf-font-awesome
-- ttf-jetbrains-mono
-- ttf-iosevka-nerd
-- ttf-opensans
-- nwg-look
-- qt5ct
-- qt6ct
-- ttf-hack
-- kvantum
-- breeze-icons
-- yad
-- mako
-- cliphist
-- hyprpaper
-- network-manager-applet
-- blueman
-- thunar
 - alacritty
-- polkit-kde-agent
-- sddm
-- otf-font-awesome
+- breeze-icons
+- brightnessctl
+- blueman
+- cliphist
+- fuse2
+- gtk4
 - gvfs
 - hypridle
-- hyperlock
+- hyprland
+- hyprlock
+- hyprpaper
+- imagemagick
+- kvantum
+- libadwaita
+- mako
+- network-manager-applet
+- nwg-look
+- noto-fonts
+- otf-font-awesome
+- pamixer
+- papirus-icon-theme
+- pavucontrol
+- playerctl
+- polkit-kde-agent
+- qt5ct
+- qt6ct
+- sddm
+- thunar
+- thunar-archive-plugin
+- ttf-font-awesome
+- ttf-fira-sans 
+- ttf-fira-code 
+- ttf-firacode-nerd
+- ttf-hack
+- ttf-opensans
+- waybar
+- xarchiver
+- xdg-user-dirs
+- xdg-desktop-portal
+- yad
+- zip
 
 **AUR**
-- wlogout
 - arc-gtk-theme
+- bibata-cursor-theme
 - hyprshot
+- wlogout
 
 
 ## Dot Files Installation
