@@ -21,7 +21,7 @@
 }
 
 #waybar {
-font-family: "JetBrains Mono", "Iosevka Nerd Font", archcraft, sans-serif;
+font-family: "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
 font-size: 1.2em;
 font-weight: 400;
 color: @base04;
