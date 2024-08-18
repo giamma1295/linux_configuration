@@ -1,8 +1,19 @@
 
-# ArchLinux /w Hyprland Su**less Config
+# ArchLinux /w Hyprland Minimal Config
+Minimal Hyprland configuration with alacritty, mako, thunar, waybar, wofi and so on...
+ 
 
-
-![Logo](./images/main.png)
+<div style="text-align: center;">
+  <img src="./images/main.png" alt="Hyprland Home" />
+  <p>Home</p>
+</div>
+<div style="text-align: center;">
+  <img src="./images/terminal.png" alt="2 alacritty Instances" />
+  <p>Terminal: Alacritty</p>
+</div><div style="text-align: center;">
+  <img src="./images/thunar.png" alt="Alacritty and Thunar" />
+  <p>FileManager:Thunar</p>
+</div>
 
 ## Preparation
 
@@ -41,6 +52,7 @@
 - sddm
 - thunar
 - thunar-archive-plugin
+- tumbler
 - ttf-font-awesome
 - ttf-fira-sans 
 - ttf-fira-code 
@@ -48,6 +60,7 @@
 - ttf-hack
 - ttf-opensans
 - waybar
+- wofi
 - xarchiver
 - xdg-user-dirs
 - xdg-desktop-portal
@@ -68,14 +81,14 @@
 3. Configure **mako** by copying the folder ``dotfiles/mako`` under ``~/.config/mako``
 4. Configure **gtk** by copying the ``dotfiles/gtk*`` files and folders under ``~/.config``
 5. Configure **qt** by copying the ``dotfiles/qt6ct`` folder under ``~/.config/qt6ct``
-6. Configure **qt** by copying the ``dotfiles/alacritty`` folder under ``~/.config/alacritty``
+6. Configure **alacritty** by copying the ``dotfiles/alacritty`` folder under ``~/.config/alacritty``
 
 ## Wallpaper
 
-This configuration will look for ``~/.config/hypr/wallpaper/bg.jpg`` file, you can edit this behaviour in ``~/.config/hypr/hyprpaper.conf``
+This configuration will look for ``~/.config/hypr/wallpaper/minimal-bg.jpg`` file, you can edit this behaviour in ``~/.config/hypr/hyprpaper.conf`` linking your favourite image.
 
 
 ## Missing feature
-1. clean the gtk mess
-2. configure font
-3. configure sleep and lock
+1. Configure sleep and lock
+2. Re-check package list
+3. Create a script to automate this installation!
