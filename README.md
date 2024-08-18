@@ -49,7 +49,7 @@
 1. Configure **hyprland** by copying the folder ``hypr`` under ``~/.config/hypr``
 2. Configure **waybar** by copying the folder ``waybar`` under ``~/.config/waybar``
 3. Configure **mako** by copying the folder ``mako`` under ``~/.config/mako``
-
+4. Configure **gtk** by copying the ``gtk*`` files and folders under ``~/.config``
 
 ## Wallpaper
 
@@ -57,5 +57,5 @@ This configuration will look for ``~/.config/hypr/wallpaper/bg.jpg`` file, you c
 
 
 ## Missing feature
-1. sleep
-2. better power menu
+1. clean the gtk mess
+2. sleep
