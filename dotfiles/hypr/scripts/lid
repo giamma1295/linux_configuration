@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$icon" "LID SCRIPT EXECUTED"
+
+if grep open /proc/acpi/button/lid/LID/state; then
+    hyprctl keyword monitor "eDP-1, 1920x1080@60, auto-right, 1.25" && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$icon" "Iternal Monitor Enabled"
+else
+    if [[ `hyprctl monitors | grep "Monitor" | wc -l` != 1 ]]; then
+        hyprctl keyword monitor "eDP-1, disable" && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$icon" "Iternal Monitor Disabled"
+    fi
+fi
